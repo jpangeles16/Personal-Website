@@ -119,14 +119,34 @@ img.settlers {
 }
 
 img.hyde{
-	width: 50%;
-	height: 50%;
+	width: 20%;
+	height: 35%;
+	display: none;
+	border: 5px solid black;
+
 }
 
 img.hyde.angry {
-	top: 0px;
-	left: 0px;
-	z-index: 0;
+	top: 10%;
+	left: 10%;
+	transform: rotate(-30deg);
+}
+
+img.hyde.happy {
+	top: 50%;
+	left: 10%;
+	transform: rotate(10deg);
+}
+
+img.hyde.sad {
+	top: 50%;
+	left: 30%;
+}
+
+img.hyde.neutral {
+	top: 30%;
+	left: 30%;
+	transform: rotate(20deg);
 }
 
 p {
@@ -201,6 +221,9 @@ i.mail {
 	width: 10%;
 }
 
+#project-lightspeed-fx {
+
+}
 
 
 
