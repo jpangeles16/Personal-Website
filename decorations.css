@@ -33,7 +33,7 @@ h1.myname {
  	top: 20%;
 }
 
-h1.experience {
+h1.experience, h1.aboutMe {
 	text-align: center;
 	color: white;
 	font-size: 300%;
@@ -41,6 +41,10 @@ h1.experience {
 	height: 10%;
 	/*background-color: magenta;*/
 	box-shadow: 2px 2px 10px #000000;
+}
+
+h1.aboutMe {
+	background-color: gray;
 }
 
 div {
@@ -115,6 +119,12 @@ div.settlers.description {
 	border-bottom: none;
 	right: 5%;
 	background-color: #ff6600;
+}
+
+div.aboutMe {
+	background-color: white;
+	min-width: 100vh;
+	min-height: 100vh;
 }
 
 img {
