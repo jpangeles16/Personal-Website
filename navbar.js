@@ -27,11 +27,18 @@ $(document).ready(function() {
 	var experienceButton = document.getElementById("experience");
 	var experienceLocation = $(".experience").position();
 
+	var aboutMeButton = document.getElementById("aboutme");
+	var aboutMeLocation = $(".aboutMe").position();
+
 	homeButton.onclick = function() {
 		window.scrollTo(0, 0, "smooth");
 	}
 
 	experienceButton.onclick = function() {
-		window.scrollTo(0, experienceLocation.top - 100, "smooth");
+		window.scrollTo(0, experienceLocation.top - 100, 'smooth');
+	}
+
+	aboutMeButton.onclick = function() {
+		window.scrollTo(0, aboutMeLocation.top - 100, 'smooth');
 	}
 });

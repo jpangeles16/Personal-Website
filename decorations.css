@@ -67,6 +67,13 @@ div.intro-description {
 	
 }
 
+div.aboutme-description {
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	background-color: black;
+}
+
 div.contact-info {
 	position: absolute;
 	top: 30%;
@@ -237,10 +244,11 @@ p {
 p.intro-description {
 	position: absolute;
 	color: white;
-	font-size: 200%;
-	text-align: center;
+	font-size: 300%;
 	top: 15%;
 	margin: 0px;
+	left: 25%;
+	width: 50%;
 }
 
 p.experience {
@@ -265,6 +273,19 @@ p.icon.phone-number {
 
 p.icon.mail {
 	top: 20%;
+}
+
+p.introduction {
+	text-indent: 50px;
+	position: absolute;
+	top: 17%;
+	font-size: 200%;
+	font-family: Baskerville;
+	width: 80%;
+	left: 10%;
+	box-shadow: 2px 2px 10px #000000;
+	padding: 10px;
+	color: white;
 }
 
 ul.skill {
