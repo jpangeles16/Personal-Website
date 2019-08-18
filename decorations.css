@@ -4,7 +4,8 @@
 
 body {
 	margin: 0px;
-	background-image: url("pics/simple-wallpaper.jpg");
+	width: 100%;
+	overflow-x: hidden;
 }
 
 a {
@@ -18,15 +19,17 @@ h1 {
 	margin: 0px;
 	position: absolute;
  	text-shadow: 2px 2px 10px #000000;
- 	font-family: calibri;
+ 	font-family: Times;
+ 	text-align: center;
 }
 
 h1.myname {
 	text-align: center;
 	width: 80%;
- 	/*text-shadow: 2px 2px 10px #000000;*/
  	top: 15%;
  	left: 10%;
+ 	color: white;
+ 	font-family: Times;
 }
 
 h1.experience, h1.aboutMe {
@@ -44,17 +47,13 @@ h1.aboutMe {
 }
 
 div {
-/*	border: 1px solid black;
-	min-height: 100vh;
-	min-width: 100vh;*/
 	font-family: papyrus;
 
 }
 
 div.intro {
-	min-width: 100vh;
-	min-height: 50vh;
-
+	width: 100%;
+	min-height: 100vh;
 } 
 
 div.intro-description {
@@ -76,7 +75,7 @@ div.aboutme-description {
 
 div.contact-info {
 	position: absolute;
-	top: 30%;
+	top: 70%;
 	width: 100%;
 	height: 40%;
 }
@@ -139,6 +138,11 @@ div.gallery {
 
 img {
 	position: absolute;
+}
+
+img.intro {
+	width: 100%;
+	height: 100%;
 }
 
 img.settlers {
@@ -236,7 +240,7 @@ img.theboys {
 }
 
 p {
-	font-family: papyrus;
+	font-family: Times;
 	margin: 3px;
 	font-size: 73%;
 }
@@ -261,18 +265,19 @@ p.experience {
 p.icon {
     position: absolute;
 	font-size: 200%;
-	text-align: center;
+	text-align: left;
 	width: 70%;
-	left: 20%;
+	left: 13%;
 	color: white;
 }
 
 p.icon.phone-number {
-	top: 0px;	
+	top: 40%;	
 }
 
 p.icon.mail {
-	top: 20%;
+	top: 40%;
+	left: 67%;
 }
 
 p.introduction {
@@ -304,24 +309,41 @@ li {
 
 i.icon {
 	position: absolute;
-	font-size: 300%;
-	color:white;
-
+	font-size: 500%;
+	color: white;
 }
 
 i.phone {
 	top:0%;
 	left: 10%;
 	width: 10%;
+	left: 20%;
 }
 
 i.mail {
-	top: 20%;
+	top: 0%;
 	left: 10%;
 	width: 10%;
+	left: 80%;
+}
+
+i.introgithub {
+	left: 60%;
+}
+
+.fa-linkedin-square {
+	left: 40%;
 }
 
 #project-lightspeed-fx {
+
+}
+
+.bubble {
+	width: auto;
+	height: 10%;
+	box-shadow: 2px 2px 10px #000000;	
+	border-radius:100px;
 
 }
 
