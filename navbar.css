@@ -6,7 +6,7 @@ source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp;
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #6512ac;
+  background-color: black;
   z-index: 1; /* So the bar overlaps. */
   box-shadow: 2px 2px 10px #000000;
 }
