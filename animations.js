@@ -75,5 +75,10 @@ function randomlyChangeColorOfBubble(bubble) {
 	}
 }
 
+// == These sets of animations are for the experience tabs. == //
+
+var digitalProjectsInternTab = document.getElementsByClassName("digital-projects description");
+
+
 
 
