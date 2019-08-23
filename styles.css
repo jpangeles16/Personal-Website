@@ -135,6 +135,10 @@ div.gallery {
 	width: 100%;
 }
 
+div.aboutMe.container {
+	width: 100%;
+}
+
 img {
 	position: absolute;
 }
@@ -362,6 +366,7 @@ ul.whatILove{
 	left: 20%;
 	top: 40%;
 }
+
 
 
 
