@@ -213,12 +213,20 @@ img.ilya.angry {
 	transform: rotate(20deg);
 }
 
-img.family, img.berkeleyFriends, img.foodieland, img.theboys {
+/*OLD*/
+/*img.family, img.berkeleyFriends, img.foodieland, img.theboys, img.howie {
 	top: 5%;
 	width: 22.5%;
 	height: 80%;
 	box-shadow: 2px 2px 10px #000000;
+}*/
 
+/*NEW*/
+img.family, img.berkeleyFriends, img.foodieland, img.theboys, img.howie {
+	top: 5%;
+	width: 20%;
+	height: auto;
+	box-shadow: 2px 2px 10px #000000;
 }
 
 img.family {
