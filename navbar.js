@@ -1,44 +1,28 @@
-/* JavaScript borrowed from online to manage navbar.
-@author W3Schools and John Angeles
-*/
+const navSlide = () => {
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('#custom_nav .nav-links li');
 
-$(document).ready(function() {
-	// When the user scrolls the page, execute myFunction 
-	window.onscroll = function() {myFunction()};
+    // Toggle Navbar with the burger
+    burger.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
 
-	// Get the navbar
-	var navbar = document.getElementById("navbar");
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                var delay = index / 10;
+                link.style.animation = 'navLinkFade 0.1s ease forwards ' + delay.toString() + 's';
+            }
+        })
 
-	// Get the offset position of the navbar
-	var sticky = navbar.offsetTop;
+        // Burger animation
+        burger.classList.toggle('toggle');
+    })
 
-	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky")
-	  } else {
-	    navbar.classList.remove("sticky");
-	  }
-	}
+}
 
-	/* Next chunk allows us to scroll to different parts of our website. */
-	var homeButton = document.getElementById("home");
-
-	var experienceButton = document.getElementById("experience");
-	var experienceLocation = $(".experience").position();
-
-	var aboutMeButton = document.getElementById("aboutme");
-	var aboutMeLocation = $(".aboutMe").position();
-
-	homeButton.onclick = function() {
-		window.scrollTo(0, 0, "smooth");
-	}
-
-	experienceButton.onclick = function() {
-		window.scrollTo(0, experienceLocation.top - 100, 'smooth');
-	}
-
-	aboutMeButton.onclick = function() {
-		window.scrollTo(0, aboutMeLocation.top - 100, 'smooth');
-	}
-});
+window.onload = function() {
+  navSlide();
+};

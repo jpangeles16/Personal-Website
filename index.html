@@ -1,124 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="navbar.css">
+		<link rel="stylesheet" type="text/css" href="todo_post.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+        <title></title>
+    </head>
+    <body>
+        <nav id="custom_nav">
+            <div class="logo">
+                <h4>John Angeles</h4>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home">Home</a>
+					<a href="#aboutMe">Experience</a>
+					<a href="#projects">Projects</a>
+                </li>
+            </ul>
+            <div id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+		</nav>
+		<div id="sections-div">
+		<section class="home" id="home">
+			<img src="images/john_photo.jpg">
+			<h1 class="myname"> John Angeles </h1>
+			<div class="contact-info">
+				<i class="fa fa-phone icon phone"></i><p class="phone-number icon"> (415) 637-6124</p>
+				<a href="mailto:jpangeles16@gmail.com"><i  class="fa fa-envelope icon mail"></i><p class="mail icon"> jpangeles16@gmail.com</p></a>
+				<a href="https://www.linkedin.com/in/john-angeles-740b33132/"><i class="fa fa-linkedin-square icon"></i></a>
+				<a href="https://github.com/jpangeles16"><i class="fa fa-github icon introgithub"></i></a>
+			</div>
+		</section>
+		<!-- About me page -->
+		<section class="aboutMe" id="aboutMe"> 
+			<h1 class="aboutMe">Welcome to my website!</h1>	
+			<div class="aboutme-description">
+				<p class="introduction"> 
+					Hello! I currently study computer science at UC Berkeley. Come check out some of my experience.
+				</p>
+				<div class="experience">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="images/hesperian.jpg" alt="Card image cap">
+						<div class="card-body">
+						<h5 class="card-title">Hesperian Health Guides</h5>
+						<p class="card-text">I performed a variety of administrative tasks that included digitizing books on a webpage, and keeping other website content current and well-maintained.</p>
+						<a href="https://hesperian.org/" class="btn btn-primary">Visit their website</a>
+						</div>
+					</div>
+					<div class="card conventus" style="width: 18rem;">
+						<img class="card-img-top" src="images/conventus.png" alt="Card image cap">
+						<div class="card-body">
+						<h5 class="card-title">Conventus Holdings Corp</h5>
+						<p class="card-text">I used React and CSS and developed 2 UI components for the company's Node app.</p>
+						<a href="https://www.cvlending.com/" class="btn btn-primary">Visit their website</a>
+						</div>
+					</div>
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="images/literacy_metor.png" alt="Card image cap">
+						<div class="card-body">
+						<h5 class="card-title">BUILD</h5>
+						<p class="card-text">BUILD stands for Berkeley United in Literacy Development. I worked with elementary school students and helped to prevent loss of literacy skills over the summer.</p>
+						<a href="https://publicservice.berkeley.edu/programs/build" class="btn btn-primary">Visit their website</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<!-- Importing some stylesheets/jQuery -->
-<link rel = "stylesheet" type = "text/css" href = "styles.css">
-<link rel = "stylesheet" type = "text/css" href = "navbar.css">
-<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="jquery-3.4.1.min.js"></script>
-	<title>John Angeles</title>
-</head>
+			<!-- Importing pics -->
+			<div class="gallery">
+			</div>
+		</section>
 
-<body>
-	<title>John Angeles</title>
-<!-- Here is the navbar -->
-	<div id="navbar">
-	  <a id=home>Home</a>
-	  <a id=aboutme>AboutMe</a>
-	  <a id=experience>Experience</a>
-	</div>
 
-<!-- Intro Page -->
-	<div class="intro">
-		<img class="intro" src="pics/colorful.png">
-		<h1 class="myname"> John Angeles </h1>
-		<div class="contact-info">
-			<i class="fa fa-phone icon phone"></i><p class="phone-number icon"> (415) 637-6124</p>
-			<a href="mailto:jpangeles16@gmail.com"><i  class="fa fa-envelope icon mail"></i><p class="mail icon"> jpangeles16@gmail.com</p></a>
-			<a href="https://www.linkedin.com/in/john-angeles-740b33132/"><i class="fa fa-linkedin-square icon"></i></a>
-			<a href="https://github.com/jpangeles16"><i class="fa fa-github icon introgithub"></i></a>
+		<!-- Project section -->
+		<section class="projects" id="projects">
+
+			<h1> Projects </h1>
+
+			<p>Here are some projects that I've coded!</p>
+
+			<div class="experience">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" src="images/todolist.jpeg" alt="Card image cap">
+					<div class="card-body">
+					<h5 class="card-title">Todo-List</h5>
+					<p class="card-text">My first Flask web-application, thanks to Corey Shafer's tutorial on Youtube.  It's a todo-list with user authentication.</p>
+					<a href="https://github.com/jpangeles16/flask-todo-list" class="btn btn-primary">Github Code</a>
+					</div>
+				</div>
+				<div class="card conventus" style="width: 18rem;">
+					<img class="card-img-top" src="images/amazons.jpeg" alt="Card image cap">
+					<div class="card-body">
+					<h5 class="card-title">Amazons</h5>
+					<p class="card-text">My favorite school project by far.  It's a chess-board game playable on the command-line, with an option to play against an AI made using the alpha-beta pruning algorithm.</p>
+					<a href="https://inst.eecs.berkeley.edu/~cs61b/fa18/materials/proj/proj2/index.html" class="btn btn-primary">Project Spec</a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" src="images/HydeHappy.png" alt="Card image cap">
+					<div class="card-body">
+					<h5 class="card-title">Project-Lightspeed</h5>
+					<p class="card-text">First ever game that I coded in C# using Unity with a couple of friends of mine.</p>
+					<a href="https://jphiliptestgames.itch.io/bikeshopdemo" class="btn btn-primary">Play a demo</a>
+					</div>
+				</div>
+			</div>
+		</section>
 		</div>
-		<img class="bubble" src="pics/bubble.png">
-	</div>
-<!-- About me page -->
-	<div class="aboutMe"> 	
-		<div class="aboutme-description">
-			<p class="introduction"> 
-				Hello! I currently study computer science at UC Berkeley.
-				Other than coding, I really love basketball, hanging out with friends, making a meal with people, and practicing piano! That doesn't mean I'm super good at them though!
-			</p>
-		</div>
-		<h1 class="aboutMe">Welcome to my website!</h1>
+		<!-- The images -->
+		</section>
 
-		<!-- Importing pics -->
-		<div class="gallery">
-			<img class="family" src="pics/family.png">
-			<img class="berkeleyFriends" src="pics/berkeley-friends.png">
-			<img class="foodieland" src="pics/foodieland.jpg">
-			<img class="theboys" src="pics/theboys.png">
-		</div>
-	</div>
-
-<!-- Experience section -->
-	<div class="experience">
-
-<!-- Digital projects intern -->
-		<div class="digital-projects description">
-			<h2 class="digital-projects"> Digital Projects Intern </h2>
-			<p class="experience"> I perform a variety of administrative tasks that include digitizing books on a webpage, and keeping other website content current and well-maintained. </p>
-		</div>
-
-<!-- Project lightspeed -->
-		<div id="project-lightspeed-fx" class="project-lightspeed description">
-			<h2> Project Lightspeed 
-				<a href="https://github.com/jpangeles16/project-lightspeed"><i class="fa fa-github"></i>
-				</a>
-			</h2> 
-			<p class="experience"> Video game my friends and I are working on. I code using C# and Unity. I write scripts so that the game can function properly. 
-				Artwork credit is not mine!
-			</p>
-		</div>
-		<h1 class="experience"> Experience </h1>
-
-<!-- BUILD  -->
-		<div class="build description">
-			<h2> BUILD Mentor </h2>
-			<p class="experience"> 
-				I work with elementary school students to help them read. It's quite challenging at times, but the work is pretty fun and rewarding. 
-			</p>
-		</div>
-
-<!-- Catan -->
-		<div class="settlers description">
-			<h2> Settlers of Catan
-				<a href="https://github.com/jpangeles16/Settlers-of-Catan"><i class="fa fa-github"></i>
-				</a>
-			</h2>
-			<p class="experience"> Coded <i> Settlers of Catan </i>, one of my favorite board games, using Java. </p>
-			<img class="settlers" src="pics/settlers.jpg">
-			<!-- <ul class="skill">
-				<li>Java</li> -->
-		</div>
-
-<!-- The images -->
-	<img class="hyde angry" src="pics/HydeAngry.png">		
-	<img class="hyde sad" src="pics/HydeSad.png">
-	<img class="ilya happy" src="pics/IlyaHappy.png">
-	<img class="hyde neutral" src="pics/HydeNeutral.png">
-	<img class="ilya sad" src="pics/IlyaSad.png">
-	<img class="ilya neutral" src="pics/IlyaNeutral.png">
-	<img class="hyde happy" src="pics/HydeHappy.png">
-	<img class="ilya angry" src="pics/IlyaAngry.png">
-	</div>
-
-
-<!-- More essential boostrap imports -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
-<!-- JavaScript imports -->
-<script src="javascript_fx.js"></script>
-<script src="navbar.js"></script>
-<script src="animations.js"></script>
-
+		<!-- Optional JavaScript -->
+		<script src="navbar.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    
 </html>
-
-
-
-
-

@@ -1,375 +1,105 @@
-/*Stuff to decorate my website with.
-@author John Angeles
-*/
+/* Elements */
 
-body {
-	margin: 0px;
-	width: 100%;
-	overflow-x: hidden;
+html, body {
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
 }
 
-a {
+section {
+	min-height: 90%;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+  
+input[type=submit] {
+	align-self: start;
+	min-width: 10em;
+}
+
+
+img {
+	width: 100%;
+}
+
+/* End of elements */
+
+#sections-div {
+	height: 100%;
+
+}
+
+/* Classes */
+
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #e1f3f8;
+}
+
+.home * {
+	text-align: center;
+}
+
+.home > img {
+	/* These center the image */
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 200px;
+	border-radius: 100%;
+}
+
+.aboutMe {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #f9dede;
+}
+
+.experience {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.card {
+	border-radius:30px;
+	background-color: tan;
 	color: black;
 }
 
-h1 {
-	color: white;
-	font-size: 1000%;
-	margin: 0px;
-	position: absolute;
- 	text-shadow: 2px 2px 10px #000000;
- 	font-family: Times;
- 	text-align: center;
+.card .btn-primary {
+	background-color: #323a45;
+	border: 1px solid black;
 }
 
-h1.myname {
+.card img {
+	border-radius: 30px;
+	height: 275px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-center;	
+	background-color: #e7f4e4;
 	text-align: center;
-	width: 80%;
- 	top: 15%;
- 	left: 10%;
- 	color: white;
- 	font-family: Times;
 }
 
-h1.experience, h1.aboutMe {
-	text-align: center;
-	color: white;
-	font-size: 200%;
-	width: 100%;
-	height: 8%;
-	background-color: #333333;
-	box-shadow: 2px 2px 10px #000000;
-}
+@media screen and (max-width: 767px) {
+	.experience {
+		flex-direction: column;
+	}
 
-h1.aboutMe {
-	background-color: #333333;
-}
-
-div {
-	font-family: Times;
-
-}
-
-div.intro {
-	width: 100%;
-	min-height: 100vh;
-} 
-
-div.intro-description {
-	position: absolute;
-	right: 0px;
-	height: 100%;
-	background-color: black;
-	width: 40%;
-	border-left: 10px solid black;
+	.card {
+		margin: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
 	
 }
+  
 
-div.aboutme-description {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #808080;
-}
-
-div.contact-info {
-	position: absolute;
-	top: 70%;
-	width: 100%;
-	height: 40%;
-}
-
-div.experience {
-	min-height: 100vh;
-	min-width: 100vh;
-	position: relative;
-	margin: 0px;
-	font-size: 130%;
-	background-color: orange;
-}
-
-div.description {
-	box-shadow: 5px 10px;
-	position: absolute;
-	width: 40%;
-	height: 40%;
-}
-
-div.digital-projects.description {
-	top: 10%;
-	background-color: #ff6666;
- 	left: 5%;
-}
-
-div.project-lightspeed.description {
-	top: 10%;
-	right: 5%;
-	background-color: #cc4400;
-}
-
-div.build.description {
-	top: 55%;
-	left: 5%;
-	background-color: #ffbb33;
-}
-
-div.settlers.description {
-	top: 55%;
-	border-bottom: none;
-	right: 5%;
-	background-color: #ff6600;
-}
-
-div.aboutMe {
-	background-color: white;
-	min-width: 100vh;
-	min-height: 100vh;
-	position: relative;
-}
-
-div.gallery {
-	position: absolute;
-	bottom: 0%;
-	background-color: #262626;
-	height: 40%;
-	width: 100%;
-}
-
-div.aboutMe.container {
-	width: 100%;
-}
-
-img {
-	position: absolute;
-}
-
-img.intro {
-	width: 100%;
-	height: 100%;
-}
-
-img.settlers {
-	width: 33%;
-	height: 70%;
-	left: 66%;
-	top: 20%;
-}
-
-img.hyde{
-	width: 20%;
-	height: 35%;
-	display: none;
-	border: 5px solid red;
-
-}
-
-img.hyde.angry {
-	top: 10%;
-	left: 10%;
-	transform: rotate(-30deg);
-}
-
-img.hyde.happy {
-	top: 50%;
-	left: 10%;
-	transform: rotate(10deg);
-}
-
-img.hyde.sad {
-	top: 50%;
-	left: 30%;
-}
-
-img.hyde.neutral {
-	top: 30%;
-	left: 30%;
-	transform: rotate(20deg;);
-}
-
-img.ilya {
-	width: 20%;
-	height: 35%;
-	display: none;
-	border: 5px solid purple;
-}
-
-img.ilya.happy {
-	top: 60%;
-	left: 50%;
-	transform: rotate(8deg);
-}
-
-img.ilya.sad {
-	top: 60%;
-	left: 20%;
-	transform: rotate(-5deg);
-}
-
-img.ilya.neutral {
-	top: 60%;
-	left: 70%;
-	transform: rotate(10deg);
-}
-
-img.ilya.angry {
-	top:50%;
-	left: 75%;
-	transform: rotate(20deg);
-}
-
-/*OLD*/
-/*img.family, img.berkeleyFriends, img.foodieland, img.theboys, img.howie {
-	top: 5%;
-	width: 22.5%;
-	height: 80%;
-	box-shadow: 2px 2px 10px #000000;
-}*/
-
-/*NEW*/
-img.family, img.berkeleyFriends, img.foodieland, img.theboys, img.howie {
-	top: 5%;
-	width: 20%;
-	height: auto;
-	box-shadow: 2px 2px 10px #000000;
-}
-
-img.family {
-	left: 2%;
-}
-
-img.berkeleyFriends {
-	left: 27%;
-}
-
-img.foodieland {
-	left: 52.5%;
-	width: 20%;
-}
-
-img.theboys {
-	left: 74.5%;
-}
-
-p {
-	font-family: Times;
-	margin: 3px;
-	font-size: 73%;
-}
-
-p.intro-description {
-	position: absolute;
-	color: white;
-	font-size: 300%;
-	top: 15%;
-	margin: 0px;
-	left: 25%;
-	width: 50%;
-}
-
-p.experience {
-	left: 10%;
-	position: absolute;
-	width: 50%;
-	top: 25%;
-}
-
-p.icon {
-    position: absolute;
-	font-size: 200%;
-	text-align: left;
-	width: 70%;
-	left: 13%;
-	color: white;
-}
-
-p.icon.phone-number {
-	top: 40%;	
-}
-
-p.icon.mail {
-	top: 40%;
-	left: 67%;
-}
-
-p.introduction {
-	/*text-indent: 50px;*/
-	position: absolute;
-	top: 17%;
-	font-size: 200%;
-	font-family: Baskerville;
-	width: 50%;
-	left: 25%;
-	box-shadow: 2px 2px 10px #000000;
-	padding: 10px;
-	color: white;
-	background-color: black;
-	border-radius: 5px;
-	text-align: center;	
-}
-
-ul.skill {
-	list-style-type: none;
-	position: absolute;
-	bottom: 3%;
-}
-
-li {
-	display: inline;
-	border-radius: 25px;
-	border: 2px solid gray;		
-	width: 50px;
-	font-size: 150%;
-}
-
-i.icon {
-	position: absolute;
-	font-size: 500%;
-	color: white;
-}
-
-i.phone {
-	top:0%;
-	left: 10%;
-	width: 10%;
-	left: 20%;
-}
-
-i.mail {
-	top: 0%;
-	left: 10%;
-	width: 10%;
-	left: 80%;
-}
-
-i.introgithub {
-	left: 60%;
-}
-
-.fa-linkedin-square {
-	left: 40%;
-}
-
-#project-lightspeed-fx {
-
-}
-
-.bubble {
-	width: auto;
-	height: 7%;
-	box-shadow: 2px 2px 10px #000000;	
-	border-radius:100px;
-}
-
-ul.whatILove{
-	position: absolute;
-	width: 60%;
-	left: 20%;
-	top: 40%;
-}
-
-
-
-
-
-
-
+ 
